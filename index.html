@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechVibe - معهد دورات تقنية">
+  <title>TechVibe | الرئيسية</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="https://githup.com">GitHup</a>
+  <!-- شريط التنقل العلوي -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="التنقل الرئيسي">
+      <a class="logo" href="index.html">
+        <i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span>
+      </a>
+      
+      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+        <li><a href="html/courses.html"><i class="fa-solid fa-graduation-cap"></i> الدورات</a></li>
+        <li><a href="html/about.html"><i class="fa-solid fa-circle-info"></i> عن المعهد</a></li>
+        <li><a href="html/contact.html"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></li>
+      </ul>
+
+      <a class="login-btn" href="html/login.html">
+        <i class="fa-solid fa-right-to-bracket"></i> تسجيل الدخول
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    
+    <!-- القسم الترحيبي Hero -->
+    <section class="hero-section">
+      <div class="container hero">
+        <div>
+          <span class="eyebrow">تعلم المستقبل اليوم</span>
+          <h1>طوّر مهاراتك <span>التقنية</span> وابنِ مستقبلك</h1>
+          <p>معهد تقني يقدم دورات عملية في Python وOracle SQL وتصميم الويب، بتجربة تعليمية عصرية.</p>
+          <div class="actions">
+            <a class="main-btn" href="html/courses.html">استعرض الدورات <i class="fa-solid fa-arrow-down"></i></a>
+            <button class="outline-btn" id="openRegister" type="button">
+              <i class="fa-solid fa-user-plus"></i> انضم إلينا
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="code-card glass">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <div class="code">
+              <div><span class="p">const</span> student =</div>
+              <div class="indent">{</div>
+              <div class="indent2">skills: <span class="g">["Python", "SQL", <br> "Web Desgin"]</span>,</div>
+              <div class="indent2">future: <span class="b">"Developer"</span></div>
+              <div class="indent">};</div>
+              <div><span class="p">console</span>.log(student);</div>
+            </div>
+          </div>
+          <div class="float one"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="float two"><i class="fa-solid fa-database"></i> SQL</div>
+          <div class="float three"><i class="fa-solid fa-code"></i> Web Desgin</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- شريط الإحصائيات -->
+    <section class="stats">
+  
+      <div class="container row g-4 stats-grid">
+        <div class="col-6 col-lg-3">
+        <div class="stat"><i class="fa-solid fa-book-open"></i><div> <strong>3+</strong><small>دورات تقنية</small></div></div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat"><i class="fa-solid fa-users"></i><div><strong>500+</strong><small>طالب</small></div></div>
+        </div>
+       <div class="col-6 col-lg-3">
+          <div class="stat"><i class="fa-solid fa-certificate"></i><div><strong>100%</strong><small>شهادات إتمام</small></div></div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat"><i class="fa-solid fa-headset"></i><div><strong>24/7</strong><small>دعم ومساعدة</small></div></div>
+          
+          
+        </div>
+      </div>
+    </section>
+    <!-- قسم السلايدر التفاعلي البسيط والمضمون -->
+<section class="page-section" style="margin-top: 20px;">
+  <div class="container">
+    
+    <div class="section-head text-center">
+      <span class="section-label">معرض المسارات</span>
+      <h2>تجربة تعليمية <strong>تطبيقية متكاملة</strong></h2>
+      <p>بيئة تدريب حديثة تمزج بين التطبيق العملي ومشاريع العمل الحقيقية.</p>
+    </div>
+
+    <div class="simple-slider">
+      <!-- الشريحة 1 -->
+      <div class="slide-item active">
+        <img src="images/python.jpg" alt="Python">
+        <div class="slide-text">
+          <h3>احتراف برمجة Python</h3>
+          <p>تطبيقات عملية من الصفر وحتى المشاريع المتقدمة.</p>
+        </div>
+      </div>
+
+      <!-- الشريحة 2 -->
+      <div class="slide-item">
+        <img src="images/sql.jpg" alt="SQL">
+        <div class="slide-text">
+          <h3>هندسة قواعد البيانات Oracle SQL</h3>
+          <p>احتراف الاستعلامات وتحليل البيانات وربط الجداول.</p>
+        </div>
+      </div>
+
+      <!-- الشريحة 3 -->
+      <div class="slide-item">
+        <img src="images/desginweb.jpg" alt="Web">
+        <div class="slide-text">
+          <h3>تصميم وتطوير واجهات الويب</h3>
+          <p>بناء واجهات عصرية تفاعلية باستخدام أحدث التقنيات.</p>
+        </div>
+      </div>
+
+      <!-- أزرار التنقل اليدوي -->
+      <button class="slider-btn prev" type="button" onclick="changeSlide(-1)">&#10095;</button>
+      <button class="slider-btn next" type="button" onclick="changeSlide(1)">&#10094;</button>
+    </div>
+
+  </div>
+</section>
+
+
+        
+          
+
+      
+
+
+
+
+    
+  </main>
+  <!-- نافذة التسجيل السريع التفاعلية Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content glass modal-tech">
+        <div class="modal-header">
+          <h2 class="modal-title">التسجيل في دورة</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+        <div class="modal-body" id="modalContent">
+          <div class="loading"><i class="fa-solid fa-spinner fa-spin"></i> جاري تحميل نموذج التسجيل...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer class="footer">
+    <div class="container">
+      
+      <!-- شعار المنصة ووصفها في المنتصف -->
+      <div style="margin-bottom: 25px;">
+        <a class="logo" href="index.html"><i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span></a>
+        <p style="color: var(--muted); margin-top: 8px;">منصة تقنية لتعلم مهارات المستقبل بطريقة عملية ومبسطة.</p>
+      </div>
+
+      <!-- قسم تواصل معنا والأيقونات متمركز في الوسط تماماً -->
+      <div class="social-section">
+        <h2>تواصل معنا</h2>
+        <div class="social-icons">
+          <a href="#" class="icon-btn telegram" aria-label="telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="icon-btn snapchat" aria-label="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+          <a href="#" class="icon-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="icon-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="icon-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- سطر الحقوق ممتد في سطر واحد بعرض الشاشة أسفلهم -->
+      <div class="copyright">
+        <p>© 2026 TechVibe - جميع الحقوق محفوظة</p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- تنبيه Toast السريع -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 4000">
+    <div id="toast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="fa-solid fa-circle-check toast-icon"></i>
+          <span id="toastMessage"></span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="إغلاق"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- مكتبات وسكربتات التشغيل -->
+  <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechVibe - معهد دورات تقنية">
+  <title>TechVibe | عن المعهد</title>
+
+  <!-- ملفات التنسيق الأساسية -->
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ==================== شريط التنقل العلوي ==================== -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="التنقل الرئيسي">
+      <!-- الشعار -->
+      <a class="logo" href="../index.html">
+        <i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span>
+      </a>
+
+      <!-- زر القائمة للأجهزة الصغيرة -->
+      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- روابط التنقل -->
+      <ul class="nav-links">
+        <li><a href="../index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+        <li><a href="courses.html"><i class="fa-solid fa-graduation-cap"></i> الدورات</a></li>
+        <li><a class="active" href="about.html"><i class="fa-solid fa-circle-info"></i> عن المعهد</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></li>
+      </ul>
+
+      <!-- زر تسجيل الدخول -->
+      <a class="login-btn" href="login.html">
+        <i class="fa-solid fa-right-to-bracket"></i> تسجيل الدخول
+      </a>
+    </nav>
+  </header>
+  <!-- ==================== المحتوى الرئيسي ==================== -->
+  <main class="page">
+    <div class="container about-grid">
+      
+      <!-- نبذة تعريفية عن المعهد -->
+      <section class="about">
+        <span class="section-label">عن TechVibe</span>
+        <h1>نتعلم اليوم لنصنع <strong>مستقبل الغد</strong></h1>
+        <p>TechVibe معهد متخصص في التدريب التقني، يركز على التعليم العملي والمحتوى المنظم في البرمجة وقواعد البيانات وتصميم المواقع.</p>
+        <p>صممنا المنصة بحيث تكون قابلة للتوسع، وتجمع بين HTML وCSS وJavaScript وBootstrap وjQuery في مشروع واحد.</p>
+        <a class="btn btn-outline-info mt-2" href="contact.html">
+          <i class="fa-solid fa-envelope"></i> تواصل معنا
+        </a>
+      </section>
+
+      <!-- مميزات المنصة -->
+      <section class="features">
+        <!-- الميزة 1 -->
+        <div class="feature glass">
+          <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h3>تعليم عملي</h3>
+            <p>تطبيقات ومشاريع تساعد على تثبيت المهارة.</p>
+          </div>
+        </div>
+
+        <!-- الميزة 2 -->
+        <div class="feature glass">
+          <div class="feature-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div>
+            <h3>مناسب للمبتدئين</h3>
+            <p>شرح تدريجي من الأساسيات إلى التطبيق.</p>
+          </div>
+        </div>
+
+        <!-- الميزة 3 -->
+        <div class="feature glass">
+          <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <h3>شهادة إتمام</h3>
+            <p>إثبات إكمال الدورة ضمن تصور المنصة.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!-- ==================== التذييل (Footer) ==================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- شعار المنصة والوصف -->
+      <div style="margin-bottom: 25px;">
+        <a class="logo" href="../index.html">
+          <i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span>
+        </a>
+        <p style="color: var(--muted); margin-top: 8px;">منصة تقنية لتعلم مهارات المستقبل بطريقة عملية ومبسطة.</p>
+      </div>
+
+      <!-- قنوات التواصل الاجتماعي -->
+      <div class="social-section">
+        <h2>تواصل معنا</h2>
+        <div class="social-icons">
+          <a href="#" class="icon-btn telegram" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="icon-btn snapchat" aria-label="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+          <a href="#" class="icon-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="icon-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="icon-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- حقوق النشر -->
+      <div class="copyright">
+        <p>© 2026 TechVibe - جميع الحقوق محفوظة</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- تنبيه الإشعارات السريع (Toast) -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 4000">
+    <div id="toast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="fa-solid fa-circle-check toast-icon"></i>
+          <span id="toastMessage"></span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="إغلاق"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== ملفات البرمجة (Scripts) ==================== -->
+  <script src="../assets/jquery/jquery-3.7.1.min.js"></script>
+  <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

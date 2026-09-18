@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechVibe - معهد دورات تقنية">
+    <title>TechVibe | إنشاء حساب</title>
+
+    <!-- ملفات التنسيق الخارجية -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- ==================== شريط التنقل العلوي ==================== -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="التنقل الرئيسي">
+            <!-- الشعار -->
+            <a class="logo" href="../index.html">
+                <i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span>
+            </a>
+
+            <!-- زر القائمة للأجهزة الصغيرة -->
+            <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- روابط الصفحات -->
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+                <li><a href="courses.html"><i class="fa-solid fa-graduation-cap"></i> الدورات</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> عن المعهد</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></li>
+            </ul>
+
+            <!-- زر تسجيل الدخول -->
+            <a class="login-btn active" href="login.html">
+                <i class="fa-solid fa-right-to-bracket"></i> تسجيل الدخول
+            </a>
+        </nav>
+    </header>
+    <!-- ==================== المحتوى الرئيسي ==================== -->
+    <main class="page">
+        <div class="container">
+            <!-- عنوان القسم -->
+            <div class="section-head">
+                <span class="section-label">حساب جديد</span>
+                <h1>إنشاء <strong>حساب</strong></h1>
+                <p>املأ البيانات التالية، وسيتم التحقق منها قبل الإرسال.</p>
+            </div>
+
+            <!-- بطاقة النموذج الزجاجية -->
+            <div class="form-card glass">
+                <form id="registerForm" class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <!-- حقل الاسم الكامل -->
+                        <div class="col-md-6">
+                            <label for="regName" class="form-label">الاسم الكامل</label>
+                            <input class="form-control" id="regName" required minlength="3" placeholder="الاسم الكامل">
+                            <div class="invalid-feedback">اكتب الاسم الكامل (3 أحرف على الأقل).</div>
+                        </div>
+
+                        <!-- حقل البريد الإلكتروني -->
+                        <div class="col-md-6">
+                            <label for="regEmail" class="form-label">البريد الإلكتروني</label>
+                            <input class="form-control" id="regEmail" type="email" required placeholder="example@email.com">
+                            <div class="invalid-feedback">أدخل بريدًا إلكترونيًا صحيحًا.</div>
+                        </div>
+
+                        <!-- حقل كلمة المرور -->
+                        <div class="col-md-6">
+                            <label for="regPassword" class="form-label">كلمة المرور</label>
+                            <input class="form-control" id="regPassword" type="password" required minlength="6" placeholder="6 أحرف على الأقل">
+                            <div class="invalid-feedback">كلمة المرور يجب أن تكون 6 أحرف على الأقل.</div>
+                        </div>
+
+                        <!-- حقل تأكيد كلمة المرور -->
+                        <div class="col-md-6">
+                            <label for="regConfirm" class="form-label">تأكيد كلمة المرور</label>
+                            <input class="form-control" id="regConfirm" type="password" required minlength="6" placeholder="أعد كلمة المرور">
+                            <div class="invalid-feedback" id="confirmFeedback">يجب أن تتطابق كلمتا المرور.</div>
+                        </div>
+
+                        <!-- خانة الشروط والأحكام -->
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" id="terms" type="checkbox" required>
+                                <label class="form-check-label" for="terms">أوافق على شروط استخدام المنصة.</label>
+                                <div class="invalid-feedback">يجب الموافقة على الشروط.</div>
+                            </div>
+                        </div>
+
+                        <!-- زر الإرسال -->
+                        <div class="col-12">
+                            <button class="main-btn full" type="submit">
+                                <i class="fa-solid fa-user-plus"></i> إنشاء الحساب
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- رابط الانتقال لتسجيل الدخول -->
+                <p class="auth-link">لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+            </div>
+        </div>
+    </main>
+    <!-- ==================== تذييل الصفحة (Footer) ==================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- نبذة عن المنصة -->
+            <div>
+                <a class="logo" href="../index.html">
+                    <i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span>
+                </a>
+                <p>منصة تقنية لتعلم مهارات المستقبل بطريقة عملية ومبسطة.</p>
+            </div>
+
+            <!-- روابط الوصول السريع -->
+            <div>
+                <h3>روابط سريعة</h3>
+                <div class="footer-links">
+                    <a href="../index.html">الرئيسية</a>
+                    <a href="courses.html">الدورات</a>
+                    <a href="about.html">عن المعهد</a>
+                    <a href="contact.html">تواصل معنا</a>
+                    <a href="login.html">تسجيل الدخول</a>
+                </div>
+            </div>
+
+            <!-- روابط التواصل الاجتماعي -->
+            <div>
+                <h3>تواصل معنا</h3>
+                <div class="social">
+                    <a href="#" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="لينكدإن"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="سناب شات"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- حقوق النشر -->
+        <div class="container copyright">
+            © 2026 TechVibe - جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <!-- تنبيه الإشعارات السريع (Toast) -->
+    <div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 4000">
+        <div id="toast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fa-solid fa-circle-check toast-icon"></i>
+                    <span id="toastMessage"></span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="إغلاق"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ملفات البرمجة (Scripts) ==================== -->
+    <script src="../assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

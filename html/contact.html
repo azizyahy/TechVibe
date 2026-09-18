@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVibe | تواصل معنا</title>
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="../index.html"><i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span></a>
+      <button class="nav-toggle" type="button" aria-label="القائمة"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a href="../index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+        <li><a href="courses.html"><i class="fa-solid fa-graduation-cap"></i> الدورات</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> عن المعهد</a></li>
+        <li><a class="active" href="contact.html"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></li>
+      </ul>
+      <a class="login-btn" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> تسجيل الدخول</a>
+    </nav>
+  </header>
+
+  <!-- محتوى التواصل -->
+  <main class="page">
+    <div class="container">
+      
+      <div class="section-head">
+        <span class="section-label">تواصل معنا</span>
+        <h1>يسعدنا <strong>تواصلك</strong></h1>
+        <p>أرسل استفسارك وسنقوم بالرد عليك في أقرب وقت.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- بطاقات معلومات التواصل الجانبية -->
+        <div class="contact-info">
+          <div class="contact-item glass">
+            <i class="fa-solid fa-phone"></i>
+            <div><h3>الهاتف</h3><p><a href="+967700000000" dir="ltr">+967 700 000 000</a></p></div>
+          </div>
+
+          <div class="contact-item glass">
+            <i class="fa-solid fa-envelope"></i>
+            <div><h3>البريد</h3><p>info@techvibe.com</p></div>
+          </div>
+
+          <div class="contact-item glass">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><h3>الموقع</h3><p>صنعاء - اليمن</p></div>
+          </div>
+
+          <!-- أيقونات التواصل الاجتماعي -->
+          <div class="contact-social-wrap">
+            <div class="social-icons">
+              <a href="https://wa.me/967700000000" target="_blank" class="icon-btn whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://instagram.com" target="_blank" class="icon-btn instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="icon-btn linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://snapchat.com" target="_blank" class="icon-btn snapchat"><i class="fa-brands fa-snapchat"></i></a>
+              <a href="https://telegram.com" target="_blank" class="icon-btn telegram"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- نموذج إرسال الرسالة -->
+        <div class="form-card glass">
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="form-group text-start">
+              <label for="contactName">الاسم</label>
+              <input class="form-control" id="contactName" required placeholder="أدخل اسمك">
+              <div class="invalid-feedback">يرجى إدخال الاسم.</div>
+            </div>
+
+            <div class="form-group text-start">
+              <label for="contactEmail">البريد الإلكتروني</label>
+              <input class="form-control" id="contactEmail" type="email" required placeholder="name@example.com">
+              <div class="invalid-feedback">أدخل بريدًا إلكترونيًا صحيحًا.</div>
+            </div>
+
+            <div class="form-group text-start">
+              <label for="message">الرسالة</label>
+              <textarea class="form-control" id="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+              <div class="invalid-feedback">يرجى كتابة الرسالة.</div>
+            </div>
+
+            <button class="main-btn full" type="sublit">Send <i class="fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+      <!-- الفوتر الممتد بعرض الصفحة -->
+  <footer class="footer">
+    <div class="container">
+      <div style="margin-bottom: 20px;">
+        <a class="logo" href="../index.html"><i class="fa-solid fa-laptop-code"></i> Tech<span>Vibe</span></a>
+        <p style="color: var(--muted); margin-top: 5px;">منصة تقنية لتعلم مهارات المستقبل بطريقة عملية ومبسطة.</p>
+      </div>
+
+      <!-- سطر الحقوق فقط في سطر واحد ممتد -->
+      <div class="copyright">
+        <p>© 2026 TechVibe - جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- التنبيه السريع Toast عند نجاح الإرسال -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 4000">
+    <div id="toast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="fa-solid fa-circle-check toast-icon"></i>
+          <span id="toastMessage"></span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="إغلاق"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- سكربتات التشغيل -->
+  <script src="../assets/jquery/jquery-3.7.1.min.js"></script>
+  <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
